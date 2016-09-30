@@ -1,0 +1,4 @@
+d=sun.jdbc.odbc.JdbcOdbcDriverd;
+u=jdbc:odbc:baseu;
+l=l;
+m=m;
