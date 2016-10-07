@@ -120,3 +120,16 @@
 0:0:0:0:0:0:0:1 - - [30/Sep/2016:10:35:13 +0200] "GET /vide/servlet/Ascii HTTP/1.1" 200 13987
 0:0:0:0:0:0:0:1 - - [30/Sep/2016:10:35:18 +0200] "GET /vide/servlet/Ascii?nbCol=5 HTTP/1.1" 200 13169
 0:0:0:0:0:0:0:1 - - [30/Sep/2016:10:35:21 +0200] "GET /vide/servlet/Ascii?nbCol=25 HTTP/1.1" 200 12701
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:10:55:31 +0200] "GET /vide/servlet/Ascii?nbCol=25 HTTP/1.1" 200 12701
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:10:55:36 +0200] "GET /vide/servlet/Ascii?nbCol=24 HTTP/1.1" 200 13509
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:16:27 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34844
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:17:54 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34844
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:18:00 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34844
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:18:02 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34844
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:18:06 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34844
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:18:38 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34844
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:18:39 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34890
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:21:39 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34890
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:21:40 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 34890
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:21:43 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 88993
+0:0:0:0:0:0:0:1 - - [30/Sep/2016:11:22:24 +0200] "GET /vide/servlet/RequeteJava HTTP/1.1" 200 96008

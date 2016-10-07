@@ -263,3 +263,67 @@ Caused by: java.lang.IllegalArgumentException: The servlets named [Ascii] and [F
 30-Sep-2016 10:49:57.493 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 30-Sep-2016 10:49:57.496 INFO [1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
 30-Sep-2016 10:49:57.498 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 10:55:23.471 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+30-Sep-2016 10:55:23.998 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 10:55:24.027 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Sep-2016 10:55:24.033 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 10:55:24.035 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Sep-2016 10:55:24.036 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1198 ms
+30-Sep-2016 10:55:24.116 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+30-Sep-2016 10:55:24.116 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+30-Sep-2016 10:55:24.166 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\vide de l'application web
+30-Sep-2016 10:55:25.764 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\vide has finished in 1 598 ms
+30-Sep-2016 10:55:25.766 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\manager de l'application web
+30-Sep-2016 10:55:26.058 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\manager has finished in 292 ms
+30-Sep-2016 10:55:26.060 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\host-manager de l'application web
+30-Sep-2016 10:55:26.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\host-manager has finished in 197 ms
+30-Sep-2016 10:55:26.259 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\__MACOSX de l'application web
+30-Sep-2016 10:55:26.409 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\__MACOSX has finished in 150 ms
+30-Sep-2016 10:55:26.410 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\ROOT de l'application web
+30-Sep-2016 10:55:26.637 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\ROOT has finished in 227 ms
+30-Sep-2016 10:55:26.642 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 10:55:26.665 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 10:55:26.667 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2629 ms
+30-Sep-2016 11:15:20.665 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Sep-2016 11:15:20.666 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:15:20.670 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 11:15:20.671 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+30-Sep-2016 11:15:20.809 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:15:20.810 INFO [1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 11:15:20.811 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:15:20.812 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 11:15:24.638 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Python35-32\Scripts\;C:\Program Files (x86)\Python35-32\;C:\Program Files\Tcl\bin;C:\Program Files\Python27\;C:\Program Files\Python27\Scripts;C:\Program Files\Perl64\site\bin;C:\Program Files\Perl64\bin;C:\Perl\site\bin;C:\Perl\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\WinSCP\;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files (x86)\Symyx\Symyx Draw 3.3\lib;C:\Program Files (x86)\Common Files\MDL Shared\ISIS;.
+30-Sep-2016 11:15:25.142 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:15:25.173 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Sep-2016 11:15:25.178 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 11:15:25.183 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Sep-2016 11:15:25.183 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1178 ms
+30-Sep-2016 11:15:25.246 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+30-Sep-2016 11:15:25.247 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+30-Sep-2016 11:15:25.289 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\vide de l'application web
+30-Sep-2016 11:15:26.844 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\vide has finished in 1 554 ms
+30-Sep-2016 11:15:26.845 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\manager de l'application web
+30-Sep-2016 11:15:27.134 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\manager has finished in 289 ms
+30-Sep-2016 11:15:27.135 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\host-manager de l'application web
+30-Sep-2016 11:15:27.336 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\host-manager has finished in 201 ms
+30-Sep-2016 11:15:27.337 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\__MACOSX de l'application web
+30-Sep-2016 11:15:27.490 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\__MACOSX has finished in 153 ms
+30-Sep-2016 11:15:27.491 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire E:\Bureau\tomcat8light\tomcat8\webapps\ROOT de l'application web
+30-Sep-2016 11:15:27.706 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory E:\Bureau\tomcat8light\tomcat8\webapps\ROOT has finished in 215 ms
+30-Sep-2016 11:15:27.713 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:15:27.732 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 11:15:27.732 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2554 ms
+30-Sep-2016 11:18:38.938 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+30-Sep-2016 11:18:39.309 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+30-Sep-2016 11:21:40.430 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+30-Sep-2016 11:21:40.803 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+30-Sep-2016 11:22:21.022 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/vide] a démarré
+30-Sep-2016 11:22:21.351 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+30-Sep-2016 11:58:30.736 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+30-Sep-2016 11:58:30.736 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:58:30.791 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 11:58:30.846 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+30-Sep-2016 11:58:30.939 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:58:30.939 INFO [1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+30-Sep-2016 11:58:30.939 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2016 11:58:30.947 INFO [1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
