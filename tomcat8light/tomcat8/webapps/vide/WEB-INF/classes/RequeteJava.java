@@ -39,7 +39,14 @@ public class RequeteJava extends HttpServlet{
 
 		PrintWriter out = res.getWriter();
 		res.setContentType( "text/html" );
-		out.println( "<head><title>La requete Sql</title></head><body><center>" );
+		out.println("<!Doctype html><html lang=\"en\">");
+		out.println( "<head><title>La requete Sql</title>"+
+			     "<meta charset=\"utf-8\">"+
+			     "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"+
+			     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"+
+			     "<link rel=\"stylesheet\" "+
+			     "href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">"+
+			     "</head><body><center>" );
 		out.println( "<h1>Le resultat de la requete</h1>" );
 		
 		Connection con = null;
@@ -48,7 +55,7 @@ public class RequeteJava extends HttpServlet{
 		
 		// Driver
 		try {
-			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+			Class.forName("org.postgresql.Driver");
 			System.out.println("Connexion driver OK");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -57,10 +64,12 @@ public class RequeteJava extends HttpServlet{
 		}
 		
 		// Parametre Base
-		String url = "jdbc:odbc:base";
+		String url = "jdbc:postgresql://psqlserv/n3p1";
+		String user = "prochnof";
+		String password = "moi";
 		try {
-			con = DriverManager.getConnection(url);
-			System.out.println("Connexion base PostreSQL OK");
+		        con = DriverManager.getConnection(url,user,password);
+		        System.out.println("Connexion base PostreSQL OK");
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("!!!!!!Erreur connection de la base");
@@ -70,7 +79,7 @@ public class RequeteJava extends HttpServlet{
 		// Requete SQL
 		try {
 			stmt = con.createStatement();
-			String query =("Select * from CLIENTS");
+			String query =("Select * from personne;");
 			rs = stmt.executeQuery(query);
 			System.out.println("Execution requete OK");
 		} catch (SQLException e) {
@@ -80,17 +89,19 @@ public class RequeteJava extends HttpServlet{
 		}
 		
 		// Affichage requete SQL
-		out.println("<center><h1>Liste des clients:</h1></center>");
 		try {
+		        out.println("<center><h1>Liste des clients:</h1></center>");
+	         	out.println("<table class=\"table-centered table-hover table-condensed\"><tr><th>ID</th><th bgcolor=\"grey\">nom</th><th>prenom</th></tr> ");
 			while (rs.next()){
-				String n = rs.getString("nom");
-				String p = rs.getString("prenom");
-				int a = rs.getInt("age");
-				out.println("<table border> "+
-				"<tr><td>"+n+"</td><td bgcolor=\"grey\">"+p+
-				"</td><td>"+a+
-				"</td></tr></table>");
+				int id = rs.getInt("id");
+				String nom = rs.getString("nom");
+				String prenom = rs.getString("prenom");
+				out.println(
+				"<tr><td>"+id+"</td><td bgcolor=\"grey\">"+nom+
+				"</td><td>"+prenom+
+				"</td></tr>");
 			}
+			out.println("</table>");
 			System.out.println("Execution affichage OK");
 		} catch (SQLException e1) {
 			System.out.println("!!!!!!Erreur affichage resultat SQL");

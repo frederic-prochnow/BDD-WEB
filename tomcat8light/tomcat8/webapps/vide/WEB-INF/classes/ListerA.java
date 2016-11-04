@@ -21,7 +21,7 @@ import javax.servlet.annotation.WebServlet;
 */
 @WebServlet("/servlet/ListerA")
 public class ListerA extends HttpServlet{
-
+	String sens;
 	public static void connexion_fermer(Connection con){
 		try {
 			con.close();
@@ -44,11 +44,11 @@ public class ListerA extends HttpServlet{
 		ResultSet rs = null;
 		Statement stmt;
 		String tri = "nom";
-		String sens = "ASC";
+	
 		
 		// Driver
 		try {
-			Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+			Class.forName("org.postgresql.Driver");
 			System.out.println("Connexion driver OK");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
@@ -57,10 +57,12 @@ public class ListerA extends HttpServlet{
 		}
 		
 		// Parametre Base
-		String url = "jdbc:odbc:base";
+		String url = "jdbc:postgresql://psqlserv/n3p1";
+		String user = "prochnof";
+		String password = "moi";
 		try {
-			con = DriverManager.getConnection(url);
-			System.out.println("Connexion base PostreSQL OK");
+		        con = DriverManager.getConnection(url,user,password);
+		        System.out.println("Connexion base PostreSQL OK");
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("!!!!!!Erreur connection de la base");
