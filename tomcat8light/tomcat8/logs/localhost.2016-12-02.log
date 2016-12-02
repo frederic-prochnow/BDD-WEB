@@ -1,0 +1,3718 @@
+02-Dec-2016 08:33:23.891 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+PrintWriter cannot be resolved to a type
+9: <h1>ma requete</h1>
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+9: <h1>ma requete</h1>
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+9: <h1>ma requete</h1>
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /requete.jsp
+Connection cannot be resolved to a type
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+16: 		
+
+
+Une erreur s'est produite à la ligne: 14 dans le fichier jsp: /requete.jsp
+ResultSet cannot be resolved to a type
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+16: 		
+17: 		// Driver
+
+
+Une erreur s'est produite à la ligne: 15 dans le fichier jsp: /requete.jsp
+Statement cannot be resolved to a type
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+16: 		
+17: 		// Driver
+18: 		try {
+
+
+Une erreur s'est produite à la ligne: 27 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+24: 			try {
+25: 			con.close();
+26: 			System.out.println("Fermeture connexion OK");
+27: 		} catch (SQLException e) {
+28: 			e.printStackTrace();
+29: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+30: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 27 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+24: 			try {
+25: 			con.close();
+26: 			System.out.println("Fermeture connexion OK");
+27: 		} catch (SQLException e) {
+28: 			e.printStackTrace();
+29: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+30: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 39 dans le fichier jsp: /requete.jsp
+DriverManager cannot be resolved
+36: 		String user = "prochnof";
+37: 		String password = "moi";
+38: 		try {
+39: 		        con = DriverManager.getConnection(url,user,password);
+40: 		        System.out.println("Connexion base PostreSQL OK");
+41: 		} catch (SQLException e) {
+42: 			e.printStackTrace();
+
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+38: 		try {
+39: 		        con = DriverManager.getConnection(url,user,password);
+40: 		        System.out.println("Connexion base PostreSQL OK");
+41: 		} catch (SQLException e) {
+42: 			e.printStackTrace();
+43: 			System.out.println("!!!!!!Erreur connection de la base");
+44: 			try {
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+44: 			try {
+45: 			con.close();
+46: 			System.out.println("Fermeture connexion OK");
+47: 		} catch (SQLException e) {
+48: 			e.printStackTrace();
+49: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+50: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+44: 			try {
+45: 			con.close();
+46: 			System.out.println("Fermeture connexion OK");
+47: 		} catch (SQLException e) {
+48: 			e.printStackTrace();
+49: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+50: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 60 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+57: 			String query =("Select * from personne;");
+58: 			rs = stmt.executeQuery(query);
+59: 			System.out.println("Execution requete OK");
+60: 		} catch (SQLException e) {
+61: 			e.printStackTrace();
+62: 			System.out.println("!!!!!!Erreur requete SQL");
+63: 			try {
+
+
+Une erreur s'est produite à la ligne: 66 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+63: 			try {
+64: 			con.close();
+65: 			System.out.println("Fermeture connexion OK");
+66: 		} catch (SQLException e) {
+67: 			e.printStackTrace();
+68: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+69: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 66 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+63: 			try {
+64: 			con.close();
+65: 			System.out.println("Fermeture connexion OK");
+66: 		} catch (SQLException e) {
+67: 			e.printStackTrace();
+68: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+69: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 88 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+85: 			}
+86: 			out.println("</table>");
+87: 			System.out.println("Execution affichage OK");
+88: 		} catch (SQLException e1) {
+89: 			System.out.println("!!!!!!Erreur affichage resultat SQL");
+90: 			e1.printStackTrace();
+91: 			try {
+
+
+Une erreur s'est produite à la ligne: 94 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+91: 			try {
+92: 			con.close();
+93: 			System.out.println("Fermeture connexion OK");
+94: 		} catch (SQLException e) {
+95: 			e.printStackTrace();
+96: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+97: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 105 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+102: 		try {
+103: 			con.close();
+104: 			System.out.println("Fermeture connexion OK");
+105: 		} catch (SQLException e) {
+106: 			e.printStackTrace();
+107: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+108: 			connexion_fermer(con);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+PrintWriter cannot be resolved to a type
+9: <h1>ma requete</h1>
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+9: <h1>ma requete</h1>
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+9: <h1>ma requete</h1>
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /requete.jsp
+Connection cannot be resolved to a type
+10: avec quelques accents � � � �
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+16: 		
+
+
+Une erreur s'est produite à la ligne: 14 dans le fichier jsp: /requete.jsp
+ResultSet cannot be resolved to a type
+11: <%
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+16: 		
+17: 		// Driver
+
+
+Une erreur s'est produite à la ligne: 15 dans le fichier jsp: /requete.jsp
+Statement cannot be resolved to a type
+12: PrintWriter out = res.getWriter();
+13: 		Connection con = null;
+14: 		ResultSet rs = null;
+15: 		Statement stmt;
+16: 		
+17: 		// Driver
+18: 		try {
+
+
+Une erreur s'est produite à la ligne: 27 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+24: 			try {
+25: 			con.close();
+26: 			System.out.println("Fermeture connexion OK");
+27: 		} catch (SQLException e) {
+28: 			e.printStackTrace();
+29: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+30: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 27 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+24: 			try {
+25: 			con.close();
+26: 			System.out.println("Fermeture connexion OK");
+27: 		} catch (SQLException e) {
+28: 			e.printStackTrace();
+29: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+30: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 39 dans le fichier jsp: /requete.jsp
+DriverManager cannot be resolved
+36: 		String user = "prochnof";
+37: 		String password = "moi";
+38: 		try {
+39: 		        con = DriverManager.getConnection(url,user,password);
+40: 		        System.out.println("Connexion base PostreSQL OK");
+41: 		} catch (SQLException e) {
+42: 			e.printStackTrace();
+
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+38: 		try {
+39: 		        con = DriverManager.getConnection(url,user,password);
+40: 		        System.out.println("Connexion base PostreSQL OK");
+41: 		} catch (SQLException e) {
+42: 			e.printStackTrace();
+43: 			System.out.println("!!!!!!Erreur connection de la base");
+44: 			try {
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+44: 			try {
+45: 			con.close();
+46: 			System.out.println("Fermeture connexion OK");
+47: 		} catch (SQLException e) {
+48: 			e.printStackTrace();
+49: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+50: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+44: 			try {
+45: 			con.close();
+46: 			System.out.println("Fermeture connexion OK");
+47: 		} catch (SQLException e) {
+48: 			e.printStackTrace();
+49: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+50: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 60 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+57: 			String query =("Select * from personne;");
+58: 			rs = stmt.executeQuery(query);
+59: 			System.out.println("Execution requete OK");
+60: 		} catch (SQLException e) {
+61: 			e.printStackTrace();
+62: 			System.out.println("!!!!!!Erreur requete SQL");
+63: 			try {
+
+
+Une erreur s'est produite à la ligne: 66 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+63: 			try {
+64: 			con.close();
+65: 			System.out.println("Fermeture connexion OK");
+66: 		} catch (SQLException e) {
+67: 			e.printStackTrace();
+68: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+69: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 66 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+63: 			try {
+64: 			con.close();
+65: 			System.out.println("Fermeture connexion OK");
+66: 		} catch (SQLException e) {
+67: 			e.printStackTrace();
+68: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+69: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 88 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+85: 			}
+86: 			out.println("</table>");
+87: 			System.out.println("Execution affichage OK");
+88: 		} catch (SQLException e1) {
+89: 			System.out.println("!!!!!!Erreur affichage resultat SQL");
+90: 			e1.printStackTrace();
+91: 			try {
+
+
+Une erreur s'est produite à la ligne: 94 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+91: 			try {
+92: 			con.close();
+93: 			System.out.println("Fermeture connexion OK");
+94: 		} catch (SQLException e) {
+95: 			e.printStackTrace();
+96: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+97: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 105 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+102: 		try {
+103: 			con.close();
+104: 			System.out.println("Fermeture connexion OK");
+105: 		} catch (SQLException e) {
+106: 			e.printStackTrace();
+107: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+108: 			connexion_fermer(con);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 08:33:59.996 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /requete.jsp
+PrintWriter cannot be resolved to a type
+8: <center>
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+8: <center>
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+8: <center>
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+Connection cannot be resolved to a type
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+15: 		
+
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /requete.jsp
+ResultSet cannot be resolved to a type
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+15: 		
+16: 		// Driver
+
+
+Une erreur s'est produite à la ligne: 14 dans le fichier jsp: /requete.jsp
+Statement cannot be resolved to a type
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+15: 		
+16: 		// Driver
+17: 		try {
+
+
+Une erreur s'est produite à la ligne: 26 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+23: 			try {
+24: 			con.close();
+25: 			System.out.println("Fermeture connexion OK");
+26: 		} catch (SQLException e) {
+27: 			e.printStackTrace();
+28: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+29: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 26 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+23: 			try {
+24: 			con.close();
+25: 			System.out.println("Fermeture connexion OK");
+26: 		} catch (SQLException e) {
+27: 			e.printStackTrace();
+28: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+29: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /requete.jsp
+DriverManager cannot be resolved
+35: 		String user = "prochnof";
+36: 		String password = "moi";
+37: 		try {
+38: 		        con = DriverManager.getConnection(url,user,password);
+39: 		        System.out.println("Connexion base PostreSQL OK");
+40: 		} catch (SQLException e) {
+41: 			e.printStackTrace();
+
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+37: 		try {
+38: 		        con = DriverManager.getConnection(url,user,password);
+39: 		        System.out.println("Connexion base PostreSQL OK");
+40: 		} catch (SQLException e) {
+41: 			e.printStackTrace();
+42: 			System.out.println("!!!!!!Erreur connection de la base");
+43: 			try {
+
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+43: 			try {
+44: 			con.close();
+45: 			System.out.println("Fermeture connexion OK");
+46: 		} catch (SQLException e) {
+47: 			e.printStackTrace();
+48: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+49: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+43: 			try {
+44: 			con.close();
+45: 			System.out.println("Fermeture connexion OK");
+46: 		} catch (SQLException e) {
+47: 			e.printStackTrace();
+48: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+49: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 59 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+56: 			String query =("Select * from personne;");
+57: 			rs = stmt.executeQuery(query);
+58: 			System.out.println("Execution requete OK");
+59: 		} catch (SQLException e) {
+60: 			e.printStackTrace();
+61: 			System.out.println("!!!!!!Erreur requete SQL");
+62: 			try {
+
+
+Une erreur s'est produite à la ligne: 65 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+62: 			try {
+63: 			con.close();
+64: 			System.out.println("Fermeture connexion OK");
+65: 		} catch (SQLException e) {
+66: 			e.printStackTrace();
+67: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+68: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 65 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+62: 			try {
+63: 			con.close();
+64: 			System.out.println("Fermeture connexion OK");
+65: 		} catch (SQLException e) {
+66: 			e.printStackTrace();
+67: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+68: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 87 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+84: 			}
+85: 			out.println("</table>");
+86: 			System.out.println("Execution affichage OK");
+87: 		} catch (SQLException e1) {
+88: 			System.out.println("!!!!!!Erreur affichage resultat SQL");
+89: 			e1.printStackTrace();
+90: 			try {
+
+
+Une erreur s'est produite à la ligne: 93 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+90: 			try {
+91: 			con.close();
+92: 			System.out.println("Fermeture connexion OK");
+93: 		} catch (SQLException e) {
+94: 			e.printStackTrace();
+95: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+96: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 104 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+101: 		try {
+102: 			con.close();
+103: 			System.out.println("Fermeture connexion OK");
+104: 		} catch (SQLException e) {
+105: 			e.printStackTrace();
+106: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+107: 			connexion_fermer(con);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /requete.jsp
+PrintWriter cannot be resolved to a type
+8: <center>
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+8: <center>
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+8: <center>
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /requete.jsp
+Connection cannot be resolved to a type
+9: <h1>ma requete</h1>
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+15: 		
+
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /requete.jsp
+ResultSet cannot be resolved to a type
+10: <%
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+15: 		
+16: 		// Driver
+
+
+Une erreur s'est produite à la ligne: 14 dans le fichier jsp: /requete.jsp
+Statement cannot be resolved to a type
+11: PrintWriter out = res.getWriter();
+12: 		Connection con = null;
+13: 		ResultSet rs = null;
+14: 		Statement stmt;
+15: 		
+16: 		// Driver
+17: 		try {
+
+
+Une erreur s'est produite à la ligne: 26 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+23: 			try {
+24: 			con.close();
+25: 			System.out.println("Fermeture connexion OK");
+26: 		} catch (SQLException e) {
+27: 			e.printStackTrace();
+28: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+29: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 26 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+23: 			try {
+24: 			con.close();
+25: 			System.out.println("Fermeture connexion OK");
+26: 		} catch (SQLException e) {
+27: 			e.printStackTrace();
+28: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+29: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 38 dans le fichier jsp: /requete.jsp
+DriverManager cannot be resolved
+35: 		String user = "prochnof";
+36: 		String password = "moi";
+37: 		try {
+38: 		        con = DriverManager.getConnection(url,user,password);
+39: 		        System.out.println("Connexion base PostreSQL OK");
+40: 		} catch (SQLException e) {
+41: 			e.printStackTrace();
+
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+37: 		try {
+38: 		        con = DriverManager.getConnection(url,user,password);
+39: 		        System.out.println("Connexion base PostreSQL OK");
+40: 		} catch (SQLException e) {
+41: 			e.printStackTrace();
+42: 			System.out.println("!!!!!!Erreur connection de la base");
+43: 			try {
+
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+43: 			try {
+44: 			con.close();
+45: 			System.out.println("Fermeture connexion OK");
+46: 		} catch (SQLException e) {
+47: 			e.printStackTrace();
+48: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+49: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+43: 			try {
+44: 			con.close();
+45: 			System.out.println("Fermeture connexion OK");
+46: 		} catch (SQLException e) {
+47: 			e.printStackTrace();
+48: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+49: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 59 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+56: 			String query =("Select * from personne;");
+57: 			rs = stmt.executeQuery(query);
+58: 			System.out.println("Execution requete OK");
+59: 		} catch (SQLException e) {
+60: 			e.printStackTrace();
+61: 			System.out.println("!!!!!!Erreur requete SQL");
+62: 			try {
+
+
+Une erreur s'est produite à la ligne: 65 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+62: 			try {
+63: 			con.close();
+64: 			System.out.println("Fermeture connexion OK");
+65: 		} catch (SQLException e) {
+66: 			e.printStackTrace();
+67: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+68: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 65 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+62: 			try {
+63: 			con.close();
+64: 			System.out.println("Fermeture connexion OK");
+65: 		} catch (SQLException e) {
+66: 			e.printStackTrace();
+67: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+68: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 87 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+84: 			}
+85: 			out.println("</table>");
+86: 			System.out.println("Execution affichage OK");
+87: 		} catch (SQLException e1) {
+88: 			System.out.println("!!!!!!Erreur affichage resultat SQL");
+89: 			e1.printStackTrace();
+90: 			try {
+
+
+Une erreur s'est produite à la ligne: 93 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+90: 			try {
+91: 			con.close();
+92: 			System.out.println("Fermeture connexion OK");
+93: 		} catch (SQLException e) {
+94: 			e.printStackTrace();
+95: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+96: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 104 dans le fichier jsp: /requete.jsp
+SQLException cannot be resolved to a type
+101: 		try {
+102: 			con.close();
+103: 			System.out.println("Fermeture connexion OK");
+104: 		} catch (SQLException e) {
+105: 			e.printStackTrace();
+106: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+107: 			connexion_fermer(con);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 08:38:11.667 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 31 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+28: 			try {
+29: 			con.close();
+30: 			System.out.println("Fermeture connexion OK");
+31: 		} catch (SQLException e) {
+32: 			e.printStackTrace();
+33: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+34: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 34 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+31: 		} catch (SQLException e) {
+32: 			e.printStackTrace();
+33: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+34: 			connexion_fermer(con);
+35: 		}
+36: 		}
+37: 		
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+48: 			try {
+49: 			con.close();
+50: 			System.out.println("Fermeture connexion OK");
+51: 		} catch (SQLException e) {
+52: 			e.printStackTrace();
+53: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+54: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 54 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+51: 		} catch (SQLException e) {
+52: 			e.printStackTrace();
+53: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+54: 			connexion_fermer(con);
+55: 		}
+56: 		}
+57: 		
+
+
+Une erreur s'est produite à la ligne: 70 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+67: 			try {
+68: 			con.close();
+69: 			System.out.println("Fermeture connexion OK");
+70: 		} catch (SQLException e) {
+71: 			e.printStackTrace();
+72: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+73: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+70: 		} catch (SQLException e) {
+71: 			e.printStackTrace();
+72: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+73: 			connexion_fermer(con);
+74: 		}
+75: 		}
+76: 		
+
+
+Une erreur s'est produite à la ligne: 101 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+98: 		} catch (SQLException e) {
+99: 			e.printStackTrace();
+100: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+101: 			connexion_fermer(con);
+102: 		}
+103: 		}
+104: 		
+
+
+Une erreur s'est produite à la ligne: 112 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+109: 		} catch (SQLException e) {
+110: 			e.printStackTrace();
+111: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+112: 			connexion_fermer(con);
+113: 		}
+114: 		
+115: 		out.println( "</body>" );
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 31 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+28: 			try {
+29: 			con.close();
+30: 			System.out.println("Fermeture connexion OK");
+31: 		} catch (SQLException e) {
+32: 			e.printStackTrace();
+33: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+34: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 34 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+31: 		} catch (SQLException e) {
+32: 			e.printStackTrace();
+33: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+34: 			connexion_fermer(con);
+35: 		}
+36: 		}
+37: 		
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+48: 			try {
+49: 			con.close();
+50: 			System.out.println("Fermeture connexion OK");
+51: 		} catch (SQLException e) {
+52: 			e.printStackTrace();
+53: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+54: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 54 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+51: 		} catch (SQLException e) {
+52: 			e.printStackTrace();
+53: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+54: 			connexion_fermer(con);
+55: 		}
+56: 		}
+57: 		
+
+
+Une erreur s'est produite à la ligne: 70 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+67: 			try {
+68: 			con.close();
+69: 			System.out.println("Fermeture connexion OK");
+70: 		} catch (SQLException e) {
+71: 			e.printStackTrace();
+72: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+73: 			connexion_fermer(con);
+
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+70: 		} catch (SQLException e) {
+71: 			e.printStackTrace();
+72: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+73: 			connexion_fermer(con);
+74: 		}
+75: 		}
+76: 		
+
+
+Une erreur s'est produite à la ligne: 101 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+98: 		} catch (SQLException e) {
+99: 			e.printStackTrace();
+100: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+101: 			connexion_fermer(con);
+102: 		}
+103: 		}
+104: 		
+
+
+Une erreur s'est produite à la ligne: 112 dans le fichier jsp: /requete.jsp
+The method connexion_fermer(Connection) is undefined for the type requete_jsp
+109: 		} catch (SQLException e) {
+110: 			e.printStackTrace();
+111: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+112: 			connexion_fermer(con);
+113: 		}
+114: 		
+115: 		out.println( "</body>" );
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 08:39:01.871 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 31 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+28: 			try {
+29: 			con.close();
+30: 			System.out.println("Fermeture connexion OK");
+31: 		} catch (SQLException e) {
+32: 			e.printStackTrace();
+33: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+34: 		}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+47: 			try {
+48: 			con.close();
+49: 			System.out.println("Fermeture connexion OK");
+50: 		} catch (SQLException e) {
+51: 			e.printStackTrace();
+52: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+53: 		}
+
+
+Une erreur s'est produite à la ligne: 68 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+65: 			try {
+66: 			con.close();
+67: 			System.out.println("Fermeture connexion OK");
+68: 		} catch (SQLException e) {
+69: 			e.printStackTrace();
+70: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+71: 		}
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 31 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+28: 			try {
+29: 			con.close();
+30: 			System.out.println("Fermeture connexion OK");
+31: 		} catch (SQLException e) {
+32: 			e.printStackTrace();
+33: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+34: 		}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+47: 			try {
+48: 			con.close();
+49: 			System.out.println("Fermeture connexion OK");
+50: 		} catch (SQLException e) {
+51: 			e.printStackTrace();
+52: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+53: 		}
+
+
+Une erreur s'est produite à la ligne: 68 dans le fichier jsp: /requete.jsp
+Duplicate parameter e
+65: 			try {
+66: 			con.close();
+67: 			System.out.println("Fermeture connexion OK");
+68: 		} catch (SQLException e) {
+69: 			e.printStackTrace();
+70: 			System.out.println("!!!!!!Erreur fermeture de connexion");
+71: 		}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 08:40:04.096 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+res cannot be resolved
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = res.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 08:41:36.631 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = response.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: PrintWriter out = response.getWriter();
+17: 		Connection con = null;
+18: 		ResultSet rs = null;
+19: 		Statement stmt;
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 08:43:52.764 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: 	PrintWriter out = response.getWriter();
+17: 	Connection con = null;
+18: 	ResultSet rs = null;
+19: 	Statement stmt;
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Duplicate local variable out
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: 	PrintWriter out = response.getWriter();
+17: 	Connection con = null;
+18: 	ResultSet rs = null;
+19: 	Statement stmt;
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 08:44:51.286 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Type mismatch: cannot convert from PrintWriter to JspWriter
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: 	out = response.getWriter();
+17: 	Connection con = null;
+18: 	ResultSet rs = null;
+19: 	Statement stmt;
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 16 dans le fichier jsp: /requete.jsp
+Type mismatch: cannot convert from PrintWriter to JspWriter
+13: <center>
+14: <h1>ma requete</h1>
+15: <%
+16: 	out = response.getWriter();
+17: 	Connection con = null;
+18: 	ResultSet rs = null;
+19: 	Statement stmt;
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:03:43.281 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [1] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [14] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+The import WEB_INF cannot be resolved
+
+An error occurred at line: [14] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+Syntax error on token "/", || expected
+
+An error occurred at line: [14] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+Unexpected end of comment
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [1] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+Syntax error on token(s), misplaced construct(s)
+
+An error occurred at line: [14] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+The import WEB_INF cannot be resolved
+
+An error occurred at line: [14] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+Syntax error on token "/", || expected
+
+An error occurred at line: [14] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/metierinstance_jsp.java]
+Unexpected end of comment
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:34:59.869 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 14 dans le fichier jsp: /metierinstance.jsp
+The method setI(int) in the type Personne is not applicable for the arguments (String)
+11: <%
+12: String index = request.getParameter("index");
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+16: p1.incrementeI();
+17: %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 14 dans le fichier jsp: /metierinstance.jsp
+The method setI(int) in the type Personne is not applicable for the arguments (String)
+11: <%
+12: String index = request.getParameter("index");
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+16: p1.incrementeI();
+17: %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:35:33.012 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /metierinstance.jsp
+Type mismatch: cannot convert from String to int
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: int index = request.getParameter("index");
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /metierinstance.jsp
+Type mismatch: cannot convert from String to int
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: int index = request.getParameter("index");
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:35:57.590 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /metierinstance.jsp
+Cannot cast from String to int
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: int index = (int) request.getParameter("index");
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /metierinstance.jsp
+Cannot cast from String to int
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: int index = (int) request.getParameter("index");
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:36:20.448 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 12
+
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: int index = Integer.parseInt(request.getParameter("index"));
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:37:12.232 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 12
+
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: int index = Integer.parseInt(request.getParameter("index"));
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:37:13.743 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 12
+
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: int index = Integer.parseInt(request.getParameter("index"));
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:37:24.993 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 12
+
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: Integer index = Integer.parseInt(request.getParameter("index"));
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:37:25.742 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 12
+
+9: <center>
+10: <h1>ma requete</h1>
+11: <%
+12: Integer index = Integer.parseInt(request.getParameter("index"));
+13: Personne p1 = new Personne();
+14: p1.setI(index);
+15: out.println(p1.toString());
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:542)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:48:44.454 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+The method getVal() is undefined for the type Personne
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getVal()%> fois à cette page sur les <%=global.getVal()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+The method getVal() is undefined for the type Personne
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getVal()%> fois à cette page sur les <%=global.getVal()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+The method getVal() is undefined for the type Personne
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getVal()%> fois à cette page sur les <%=global.getVal()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+The method getVal() is undefined for the type Personne
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getVal()%> fois à cette page sur les <%=global.getVal()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:49:34.374 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+Cannot invoke toString() on the primitive type int
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getI().toString()%> fois à cette page sur les <%=global.getI().toString()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+Cannot invoke toString() on the primitive type int
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getI().toString()%> fois à cette page sur les <%=global.getI().toString()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+Cannot invoke toString() on the primitive type int
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getI().toString()%> fois à cette page sur les <%=global.getI().toString()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Une erreur s'est produite à la ligne: 35 dans le fichier jsp: /metierinstance.jsp
+Cannot invoke toString() on the primitive type int
+32: 	}
+33: 	local.incrementeI();
+34: %>
+35: Vous avez accédé <%=local.getI().toString()%> fois à cette page sur les <%=global.getI().toString()%> accès effectués.
+36: </body>
+37: </html>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:50:23.494 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 19
+
+16: p1.incrementeI();*/
+17: 
+18: // initialisation du compteur global
+19: Personne global=(Personne)application.getAttribute("global");
+20: 	if(global==null){  
+21: 		global= new Personne();
+22: 		application.setAttribute("global",global);
+
+
+Stacktrace:] with root cause
+ java.lang.ClassCastException: org.apache.jsp.metierinstance_jsp$Cpt cannot be cast to metier.Personne
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:87)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:51:50.710 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 21
+
+18: p1.incrementeI();*/
+19: 
+20: // initialisation du compteur global
+21: 	Personne global=(Personne)application.getAttribute("global");
+22: 	if(global==null){  
+23: 		global= new Personne();
+24: 		application.setAttribute("global",global);
+
+
+Stacktrace:] with root cause
+ java.lang.ClassCastException: org.apache.jsp.metierinstance_jsp$Cpt cannot be cast to metier.Personne
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:90)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 09:51:51.945 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /metierinstance.jsp at line 21
+
+18: p1.incrementeI();*/
+19: 
+20: // initialisation du compteur global
+21: 	Personne global=(Personne)application.getAttribute("global");
+22: 	if(global==null){  
+23: 		global= new Personne();
+24: 		application.setAttribute("global",global);
+
+
+Stacktrace:] with root cause
+ java.lang.ClassCastException: org.apache.jsp.metierinstance_jsp$Cpt cannot be cast to metier.Personne
+	at org.apache.jsp.metierinstance_jsp._jspService(metierinstance_jsp.java:90)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:30:07.118 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 15 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+12: <%
+13: Integer ordi = (Integer) application.getAttribute("ordi");
+14: Integer humain =(Integer) session.getAttribute("humain");
+15: if(getPointsHumain() == 0 && getPointsOrdi() == 0) {
+16: 	init();
+17: 	application.setAttribute("ordi",ordi);
+18: 	session.setAttribute("humain",humain);
+
+
+Une erreur s'est produite à la ligne: 15 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+12: <%
+13: Integer ordi = (Integer) application.getAttribute("ordi");
+14: Integer humain =(Integer) session.getAttribute("humain");
+15: if(getPointsHumain() == 0 && getPointsOrdi() == 0) {
+16: 	init();
+17: 	application.setAttribute("ordi",ordi);
+18: 	session.setAttribute("humain",humain);
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: 	application.setAttribute("ordi",ordi);
+18: 	session.setAttribute("humain",humain);
+19: } else {
+20: 	ordi = getPointsOrdi();
+21: 	humain = getPointsHumain();
+22: %>
+23: <h1>Pile ou face</h1>
+
+
+Une erreur s'est produite à la ligne: 21 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+18: 	session.setAttribute("humain",humain);
+19: } else {
+20: 	ordi = getPointsOrdi();
+21: 	humain = getPointsHumain();
+22: %>
+23: <h1>Pile ou face</h1>
+24: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+An error occurred at line: [108] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/jeu_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [125] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/jeu_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [126] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/jeu_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 15 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+12: <%
+13: Integer ordi = (Integer) application.getAttribute("ordi");
+14: Integer humain =(Integer) session.getAttribute("humain");
+15: if(getPointsHumain() == 0 && getPointsOrdi() == 0) {
+16: 	init();
+17: 	application.setAttribute("ordi",ordi);
+18: 	session.setAttribute("humain",humain);
+
+
+Une erreur s'est produite à la ligne: 15 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+12: <%
+13: Integer ordi = (Integer) application.getAttribute("ordi");
+14: Integer humain =(Integer) session.getAttribute("humain");
+15: if(getPointsHumain() == 0 && getPointsOrdi() == 0) {
+16: 	init();
+17: 	application.setAttribute("ordi",ordi);
+18: 	session.setAttribute("humain",humain);
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: 	application.setAttribute("ordi",ordi);
+18: 	session.setAttribute("humain",humain);
+19: } else {
+20: 	ordi = getPointsOrdi();
+21: 	humain = getPointsHumain();
+22: %>
+23: <h1>Pile ou face</h1>
+
+
+Une erreur s'est produite à la ligne: 21 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+18: 	session.setAttribute("humain",humain);
+19: } else {
+20: 	ordi = getPointsOrdi();
+21: 	humain = getPointsHumain();
+22: %>
+23: <h1>Pile ou face</h1>
+24: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+An error occurred at line: [108] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/jeu_jsp.java]
+Syntax error, insert "}" to complete Block
+
+An error occurred at line: [125] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/jeu_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [126] in the generated java file: [/home/infoetu/prochnof/bdd-web/tomcat8light/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/jeu_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:35:01.405 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+jeu cannot be resolved to a variable
+10: <body>
+11: <center>
+12: <%
+13: 	session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+jeu cannot be resolved to a variable
+10: <body>
+11: <center>
+12: <%
+13: 	session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:35:43.016 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+Type mismatch: cannot convert from void to JeuPileOuFace
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+Type mismatch: cannot convert from void to JeuPileOuFace
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:36:18.742 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+Cannot cast from void to JeuPileOuFace
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = (JeuPileOuFace) session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+Cannot cast from void to JeuPileOuFace
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = (JeuPileOuFace) session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:38:38.182 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+Cannot cast from void to JeuPileOuFace
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = (JeuPileOuFace)session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+Cannot cast from void to JeuPileOuFace
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = (JeuPileOuFace)session.setAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:39:05.294 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, JeuPileOuFace)
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = (JeuPileOuFace)session.getAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 13 dans le fichier jsp: /jeu.jsp
+The method getAttribute(String) in the type HttpSession is not applicable for the arguments (String, JeuPileOuFace)
+10: <body>
+11: <center>
+12: <%
+13: 	JeuPileOuFace jeu = (JeuPileOuFace)session.getAttribute("jeu",jeu);
+14: %>
+15: <h1>Pile ou face</h1>
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:39:36.223 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Une erreur s'est produite à la ligne: 19 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+16: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+17: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+18: <h3>Alors, pr�t � relever le d�fi ??</h3>
+19: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+20: Vous jouez Pile ou Face ?
+21: </center>
+22: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:39:55.635 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:39:56.503 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:39:57.673 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:03.308 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:04.295 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:05.584 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:06.575 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:07.440 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:08.327 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:09.199 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:10.136 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:11.295 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.jeu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:131)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:62)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+02-Dec-2016 11:40:12.325 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsHumain() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Une erreur s'est produite à la ligne: 20 dans le fichier jsp: /jeu.jsp
+The method getPointsOrdi() is undefined for the type jeu_jsp
+17: <h3>Le premier arriv�e � 10 a gagn� !</h3>
+18: <h3>Deux faces identiques je gagne, deux faces differentes vous gagnez !<h3>
+19: <h3>Alors, pr�t � relever le d�fi ??</h3>
+20: Scores de <%=getPointsHumain()%> � <%=getPointsOrdi()%>
+21: Vous jouez Pile ou Face ?
+22: </center>
+23: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
