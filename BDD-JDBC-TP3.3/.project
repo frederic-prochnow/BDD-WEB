@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>BDD-JDBC-TP3.3</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/Formulaire_avec_select.java</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/tomcat8light/tomcat8/webapps/vide/WEB-INF/classes/Formulaire_avec_select.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

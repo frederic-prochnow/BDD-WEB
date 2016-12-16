@@ -15,8 +15,8 @@ import javax.servlet.annotation.WebServlet;
 * Affichage terminal des étapes d'execution.
 * Affichage html du resultat.
 */
-@WebServlet("/servlet/Select")
-public class Select extends HttpServlet{
+@WebServlet("/servlet/Formulaire_avec_select")
+public class Formulaire_avec_select extends HttpServlet{
 
 	public static void connexion_fermer(Connection con){
 		try {
@@ -36,14 +36,14 @@ public class Select extends HttpServlet{
 		PrintWriter out = res.getWriter();
 		res.setContentType( "text/html" );
 		out.println("<!Doctype html><html lang=\"en\">");
-		out.println( "<head><title>La requete Sql</title>"+
+		out.println( "<head><title>Formulaire</title>"+
 			     "<meta charset=\"utf-8\">"+
 			     "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"+
 			     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"+
 			     "<link rel=\"stylesheet\" "+
 			     "href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">"+
 			     "</head><body><center>" );
-		out.println( "<h1>Le resultat de la requete</h1>" );
+		out.println( "<h1>Formulaire de saisie</h1>" );
 		
 		Connection con = null;
 		ResultSet rs = null;
@@ -74,21 +74,53 @@ public class Select extends HttpServlet{
 			System.out.println("!!!!!!Erreur connection de la base");
 			connexion_fermer(con);
 		}
+
+		// Formulaire
+		out.println("<form method=\"post\">");
+		out.println("<fieldset><legend>Detail technique...</legend>");
+		out.println("<label for=\"id_abs\">Quel est le numero de votre absence ?</label> "+
+			    "<input type=\"text\" name=\"id_abs\" id=\"id_abs\" /> " +
+			    "<label for=\"login\">Quel est le login de l'etudiant absent ?</label> "+
+			    "<input type=\"text\" name=\"login\" id=\"login\" />"+
+			    "<label for=\"id\">Quel est le numero de votre justificatif ?</label> "+
+			    "<input type=\"text\" name=\"id\" id=\"id\" />");
+		out.println("</fieldset><fieldset><legend>Date de l'absence</legend>");
+		out.println("<label for=\"date2\">Veuillez choisir la date de l'absence</label> "+
+			    "<input type=\"date\" name=\"date2\" id=\"date2\" />");
+		out.println("</fieldset><input type=\"submit\" value=\"Envoyer\" /></form>");
 		
-		// Requete SQL
+		String s1 = getInitParameter("id_abs");
+		String s2 = getInitParameter("login");
+		String s3 = getInitParameter("id");
+		String s4 = getInitParameter("date2");
+		
+		// Requete SQL INSERTION
+		try {
+			stmt = con.createStatement();
+			String query =("insert into absence values("+s1+","+s2+","+s3+","+s4+");");
+			rs = stmt.executeQuery(query);
+			System.out.println("Execution requete insertion OK");
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("!!!!!!Erreur requete insertion SQL");
+			connexion_fermer(con);
+		}
+		
+		// Requete SQL AFFICHAGE
 		try {
 			stmt = con.createStatement();
 			String query =("Select * from absence ;");
 			rs = stmt.executeQuery(query);
-			System.out.println("Execution requete OK");
+			System.out.println("Execution requete affichage OK");
 		} catch (SQLException e) {
 			e.printStackTrace();
-			System.out.println("!!!!!!Erreur requete SQL");
+			System.out.println("!!!!!!Erreur requete affichage SQL");
 			connexion_fermer(con);
 		}
 		
+		
 		// Affichage requete SQL
-		out.println("<center><h1>Affichage de la table "+ nom_table  +" :</h1></center>");
+		out.println("<center><h1>Affichage de la table ABSENCE avec valeurs actuel :</h1></center>");
 		out.println("<table class=\"table-centered table-hover table-condensed\">");
 		try {
 			while (rs.next()){
