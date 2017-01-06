@@ -87,7 +87,7 @@ public class authent extends HttpServlet{
 			stmt = con.createStatement();
 			login = req.getParameter("login");
 			mdp = req.getParameter("mdp");
-			String query =("Select * from personnes where login = \'"+login+"\' and mdp = \'"+mdp+"\';");
+			String query =("Select * from personne where login = \'"+login+"\' and mdp = \'"+mdp+"\';");
 			//System.out.println("Requete : "+ query);
 			rs = stmt.executeQuery(query);
 			System.out.println("Execution requete  OK");
@@ -101,15 +101,15 @@ public class authent extends HttpServlet{
 		try {
 		    sql= rs.next();
 		    if(sql) {
-			out.println("<h3>Votre login "+login+" est correct et ton mot de passe aussi !!</h3>");
+			System.out.println("<h3>Votre login "+login+" est correct et ton mot de passe aussi !!</h3>");
 			//dispatcher=req.getRequestDispatcher("menu.html");
-			out.println("<h3>Veuillez patientez .... Vous allez etre redirigee ...</h3>");
+			System.out.println("<h3>Veuillez patientez .... Vous allez etre redirigee ...</h3>");
 			res.sendRedirect("../menu.html");
 		    }else{
-			out.println("<h3>Votre login "+login+" est inconnu au bataillon ou tu t'es trompe dans ton mot de passe !! </h3></br> " +
-				    "<h3>Reviens plus tard soldat ou recommence!!</h3>");
+			System.out.println("<h3>Votre login "+login+" est inconnu au bataillon ou tu t'es trompe dans ton mot de passe !! </h3></br> ");// +
+					   // "<h3>Reviens plus tard soldat ou recommence!!</h3>");
 			//dispatcher=req.getRequestDispatcher("login.html");
-			out.println("<h3>Veuillez patientez .... Vous allez etre redirigee ...</h3>");
+			System.out.println("<h3>Veuillez patientez .... Vous allez etre redirigee ...</h3>");
 			res.sendRedirect("../login.html");
 		    }
 		    System.out.println("Execution verification login et mot de passe  OK");
