@@ -1,0 +1,35 @@
+*{
+	background-color:lavender;
+}
+
+body>header,footer{
+	letter-spacing:1em;
+	font-size:3em;
+	text-align:center;
+	color:white;
+	background-color:black;
+	border: groove;
+}
+h1{
+	background-color:black;
+	color:white;
+	font-size:2em;
+	text-align:center;
+}
+h2{
+	font-size:2em;
+}
+h3{
+	font-size:1.5em;
+	font-family:"Trebuchet Ms","Arial","sans-serif";
+}
+div>p{
+	background-color:grey;
+}
+div{
+	text-align:center;
+	width:46%;
+	float:left;
+	padding:1%;
+	margin:1%;
+}
