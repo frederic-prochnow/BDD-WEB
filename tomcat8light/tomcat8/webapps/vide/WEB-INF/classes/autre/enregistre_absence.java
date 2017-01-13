@@ -1,4 +1,5 @@
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
@@ -6,8 +7,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import java.io.*;
-
-import javax.management.Query;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.WebServlet;
@@ -16,8 +15,8 @@ import javax.servlet.annotation.WebServlet;
 * Affichage terminal des étapes d'execution.
 * Affichage html du resultat.
 */
-@WebServlet("/servlet/authent")
-public class authent extends HttpServlet{
+@WebServlet("/servlet/enregistre_absence")
+public class enregistre_absence extends HttpServlet{
 
 	public static void connexion_fermer(Connection con){
 		try {
@@ -37,27 +36,21 @@ public class authent extends HttpServlet{
 		PrintWriter out = res.getWriter();
 		res.setContentType( "text/html" );
 		out.println("<!Doctype html><html lang=\"en\">");
-		out.println( "<head><title>La requete Sql</title>"+
+		out.println( "<head><title>Formulaire</title>"+
 			     "<meta charset=\"utf-8\">"+
 			     "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"+
 			     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"+
 			     "<link rel=\"stylesheet\" "+
 			     "href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\">"+
 			     "</head><body><center>" );
-		out.println( "<h1><center> Service d'authentification :</h1>"+
-			     "<h3><center> Voici le resultat : </h3>");
+		out.println( "<h1>Formulaire de saisie</h1>" );
 		
 		Connection con = null;
 		ResultSet rs = null;
 		ResultSetMetaData rsmd = null;
 		Statement stmt;
-		//RequestDispatcher dispatcher;
 		
-		String login = "";
-		boolean sql = false;
-		String mdp = "";
-		
-		System.out.println("Transfert servlet OK");
+		String nom_table = "";
 		
 		// Driver
 		try {
@@ -81,52 +74,20 @@ public class authent extends HttpServlet{
 			System.out.println("!!!!!!Erreur connection de la base");
 			connexion_fermer(con);
 		}
-		
-		// Requete SQL et recuperation du mot de passe
-		try {
-			stmt = con.createStatement();
-			login = req.getParameter("login");
-			mdp = req.getParameter("mdp");
-			String query =("Select * from personne where login = \'"+login+"\' and mdp = \'"+mdp+"\';");
-			//System.out.println("Requete : "+ query);
-			rs = stmt.executeQuery(query);
-			System.out.println("Execution requete  OK");
-		} catch (SQLException e) {
-			e.printStackTrace();
-			System.out.println("!!!!!!Erreur requete SQL");
-			connexion_fermer(con);
-		}
 
-		// Verification du login et Affichage resultat precense login
-		try {
-		    sql= rs.next();
-		    if(sql) {
-			System.out.println("<h3>Votre login "+login+" est correct et ton mot de passe aussi !!</h3>");
-			//dispatcher=req.getRequestDispatcher("menu.html");
-			System.out.println("<h3>Veuillez patientez .... Vous allez etre redirigee ...</h3>");
-			res.sendRedirect("../menu.html");
-		    }else{
-			System.out.println("<h3>Votre login "+login+" est inconnu au bataillon ou tu t'es trompe dans ton mot de passe !! </h3></br> ");// +
-					   // "<h3>Reviens plus tard soldat ou recommence!!</h3>");
-			//dispatcher=req.getRequestDispatcher("login.html");
-			System.out.println("<h3>Veuillez patientez .... Vous allez etre redirigee ...</h3>");
-			res.sendRedirect("../login.html");
-		    }
-		    System.out.println("Execution verification login et mot de passe  OK");
-		} catch (SQLException e1) {
-		    System.out.println("!!!!!!Erreur verification login et mot de passe ");
-		    e1.printStackTrace();
-		    connexion_fermer(con);
-		}
-
-		// Verification du mot de passe et affichage si mot de passe bon
-		req.setAttribute("login",login);
-		req.setAttribute("mdp",mdp);
-		System.out.println("Mise en attribut OK");
-
-		// Redirection vers la page
-		//dispatcher.forward(req,res);
-		System.out.println("Redirection OK");
+		// Formulaire
+		out.println("<form method=\"post\" action=\"insertion_absence\" >");
+		out.println("<fieldset><legend>Detail technique...</legend>");
+		out.println("<label for=\"login\">Quel est le login de l'etudiant absent ?</label> "+
+			    "<input type=\"text\" name=\"login\" id=\"login\" />"+
+			    "<label for=\"id\">Quel est le numero de votre justificatif ?(mettre 0 si rien)</label> "+
+			    "<input type=\"text\" name=\"id\" id=\"id\" />");
+		out.println("</fieldset><fieldset><legend>Date de l'absence</legend>");
+		out.println("<label for=\"date2\">Quel est la date de l'absence (au format AAAA-MM-JJ) ?</label> "+
+			    "<input type=\"date\" name=\"date2\" id=\"date2\" />" +
+			    "<label for=\"heure2\">Quel est l'heure du creneau de l'absence (au format HH:MM:SS) ?</label> "+
+			    "<input type\"time\" name =\"heure2\" id=\"heure2\" />");
+		out.println("</fieldset><input type=\"submit\" value=\"Envoyer\" /></form>");
 		
 		// fermeture de connection
 		try {

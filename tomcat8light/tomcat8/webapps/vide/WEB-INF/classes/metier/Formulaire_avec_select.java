@@ -48,7 +48,7 @@ public class Formulaire_avec_select extends HttpServlet{
 		Connection con = null;
 		ResultSet rs = null;
 		ResultSetMetaData rsmd = null;
-		Statement stmt;
+		Statement stmt = null;
 		
 		String nom_table = "";
 		
